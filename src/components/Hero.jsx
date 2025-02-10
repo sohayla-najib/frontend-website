@@ -7,9 +7,26 @@ function Hero() {
     <header className="hero">
       <div className="hero-text">
         <h1>Interior Design</h1>
-        <p>Bringing your interior dreams to  life</p>
+
+        <p>
+           bringing your interior dreams to life
+        </p>
+
         <button className="start-btn">Start Project</button>
-      </div>
+     { /* stats moved insde herotext */}
+       <div className="stats">
+         <div>
+          <h2>600+</h2>
+          <p>Satisfied Clients</p>
+         </div>
+         <div>
+          <h2>100+</h2>
+          <p>Unique Styles</p>
+         </div>
+       </div>
+  </div>
+      
+
       <div className="hero-images">
         <img src={interior1} alt="Interior 1" />
         <img src={interior2} alt="Interior 2" />

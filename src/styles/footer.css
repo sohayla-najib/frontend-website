@@ -11,3 +11,37 @@
   color: white;
  }
 
+.links ul {
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+.links li a {
+  text-decoration: none;
+
+}
+.links li{
+  margin-top: 10px;
+}
+.logo {
+  text-align: center;
+}
+
+.logo h3 {
+  font-size: 24px; 
+}
+
+.logo p {
+  margin: 10px 0; 
+}
+
+.social-icon {
+  margin-right: 15px; 
+}
+
+.social-icon img, .icon {
+  width: 20px; 
+  height: 20px;
+  vertical-align: middle; /* Align the icons vertically with the text */
+  margin-right: 8px; /* Add some space between the icon and the text */
+}

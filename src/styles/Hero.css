@@ -1,3 +1,4 @@
+ /* hero.css */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -14,12 +15,30 @@
 }
 
 .hero-text h1{
-  
-  margin-bottom:50px;
+
+  margin-bottom:30px;
 }
 .hero-text p{
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 .hero-text button{
-  margin-bottom: 90px;
+  margin-top:60px;
 }
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:20px;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: transparent !important;
+}
+.stats div{
+  text-align:center;
+ color: #545454;
+}
+.div{
+  background-color: white;
+
+}
+

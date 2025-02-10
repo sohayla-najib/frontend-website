@@ -20,12 +20,26 @@ function Footer() {
           <li><a href="#">Production</a></li>
         </ul>
       </div>
-      <div className="logo">
-        <h3>LOGO</h3>
-        <p> 01999111</p>
-        <p> xdesign@gmail.com</p>
-        <p> Facebook | LinkedIn</p>
-      </div>
+
+        <div className="logo">
+         <h3>LOGO</h3>
+         <p>
+            <img src="assets/icons/phone.jpg" alt="" className="icon" /> 01999111
+         </p>
+
+         <p>
+            <img src="assets/icons/mail.jpg" alt="" className="icon" /> xdesign@gmail.com
+        </p>
+
+        <p>
+           <a href="https://facebook.com" target="_blank" className="social-icon">
+           <img src="assets/icons/facebook.jpg" alt="" className="icon" />
+           </a>
+           <a href="https://linkedin.com" target="_blank" className="social-icon">
+           <img src="assets/icons/linkedin.png" alt="" className="icon" />
+           </a>
+        </p>
+       </div>
     </footer>
   );
 }
