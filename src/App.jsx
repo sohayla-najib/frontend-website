@@ -1,25 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+
+import "./App.css";
+
+// import Services from "./pages/Services";
+// import Contact from "./pages/Contact";
+// import About from "./pages/About";
+// import Production from "./pages/Production";
+// import "./styles/Global.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  console.log("App component is running...");
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-     
-      <h1>helloooo</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} /
+        <Route path="/production" element={<Production />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

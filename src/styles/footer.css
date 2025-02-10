@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7f7f7f;
+    color: white;
+    padding: 30px;
+  
+ 
+  }
+ .links a{
+  color: white;
+ }
+

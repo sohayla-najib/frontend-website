@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 50px;
+    background-color: white;
+  }
+.start-btn{
+  background-color:#FBB03B ;
+  color:white;
+  border-color: #FBB03B;
+}
+.nav-links{
+  justify-content: space-between;
+  display: flex;
+}
+.nav-links li a {
+  margin : 0 30px;
+  color:#545454;
+  
+}
