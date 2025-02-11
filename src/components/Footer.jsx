@@ -24,11 +24,11 @@ function Footer() {
         <div className="logo">
          <h3>LOGO</h3>
          <p>
-            <img src="/assets/icons/phone.jpg" alt="" className="icon" /> 01999111
+            <img src="./assets/icons/phone.jpg"  className="icon" /> 01999111
          </p>
 
          <p>
-            <img src="/assets/icons/mail.jpg" alt="" className="icon" /> xdesign@gmail.com
+            <img src="/assets/icons/mail.jpg"  className="icon" /> xdesign@gmail.com
         </p>
 
         <p>
