@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-
-
+// import Navbar from "./components/Navbar";
 import "./App.css";
 
 // import Services from "./pages/Services";
@@ -12,18 +12,16 @@ import "./App.css";
 
 function App() {
   
-  console.log("App component is running...");
+  //  console.log("App component is running...");
 
   return (
-    <Router>
+    
+    //  <Router>  
+     // <Navbar />  
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} /
-        <Route path="/production" element={<Production />} /> */}
       </Routes>
-    </Router>
+      // </Router>  
   );
 }
 

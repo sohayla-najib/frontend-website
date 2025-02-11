@@ -1,8 +1,13 @@
 import "../styles/Hero.css";
 import interior1 from "../assets/images/interior1.jpg";
 import interior2 from "../assets/images/interior2.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/services");
+  };
   return (
     <header className="hero">
       <div className="hero-text">
@@ -12,7 +17,9 @@ function Hero() {
            bringing your interior dreams to life
         </p>
 
-        <button className="start-btn">Start Project</button>
+        <button className="start-btn" onClick={handleClick}   >
+        Start Project
+        </button>
      { /* stats moved insde herotext */}
        <div className="stats">
          <div>
