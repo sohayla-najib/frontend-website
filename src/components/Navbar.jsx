@@ -9,9 +9,9 @@ function Navbar() {
       <div className="logo">LOGO</div>
       <ul className="nav-links">
         <li><Link to="/">Home </Link></li>
-        <li><Link to="/project">Project</Link></li>
-        <li><Link to="/contact us">Contact us</Link></li>
-        <li><Link to="/about us">About us </Link></li>
+        <li><Link to="/projects">Services</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/about">About </Link></li>
         <li><Link to="/production">Production</Link></li> 
       </ul> 
        <button className="start-btn">Start Project</button> 
