@@ -1,6 +1,7 @@
  //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Project from "./pages/projects";
 import FinalContact from "./pages/Contact";
 // import Navbar from "./components/Navbar";
 import "./App.css";
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<FinalContact />} />
+        <Route path="/projects" element={<Project />} />
       </Routes>
       // </Router>  
   );
