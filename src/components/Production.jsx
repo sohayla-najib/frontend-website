@@ -1,11 +1,10 @@
-
 import "../styles/Production.css";
-import interior5 from "../assets/images/interior5";
-import interior6 from "../assets/images/interior6";
-import interior7 from "../assets/images/interior7";
-import interior8 from "../assets/images/interior8";
+import interior5 from "../assets/images/interior5.jpg";
+import interior6 from "../assets/images/interior6.jpg";
+import interior7 from "../assets/images/interior7.jpg";
+import interior8 from "../assets/images/interior8.jpg";
 
-const Production = () => {
+const Productioncomponent = () => {
   return (
     <div className="Production-container">
       <h2 className="title">
@@ -14,7 +13,8 @@ const Production = () => {
 
       <div className="step-by-step">
         <h3>Step-by-Step Process</h3>
-        <img src={interior5.jpg} alt="step-by-step" />
+        <img src={interior5} alt="step-by-step" />
+
         <ul>
           <li><strong>Step 1: Consultation</strong> – Understand your needs and vision.</li>
           <li><strong>Step 2: Design & Planning</strong> – Create custom designs and layouts.</li>
@@ -49,4 +49,4 @@ const Production = () => {
     );
     };
 
-export default Production;
+export default Productioncomponent;
