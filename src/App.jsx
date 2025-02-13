@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import FinalContact from "./pages/Contact";
 // import Navbar from "./components/Navbar";
 import "./App.css";
+import AboutUs from "./pages/AboutUs";
+import Production from "./pages/Production";
 
 // import Services from "./pages/Services";
 // import Contact from "./pages/Contact";
@@ -20,8 +22,10 @@ function App() {
     //  <Router>  
      // <Navbar />  
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={< Home />} />
         <Route path="/Contact" element={<FinalContact />} />
+        <Route path="/AboutUs" element={<AboutUs/>} />
+        <Route path="/Production" element={<Production/>} />
       </Routes>
       // </Router>  
   );

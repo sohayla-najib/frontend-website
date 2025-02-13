@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../styles/contact.css";
 
 
@@ -85,7 +85,7 @@ const Contact = () => {
           onChange={handleChange}
         />
         {errors.message && <span className="error">{errors.message}</span>}
-        <button class="button" type="submit">Send</button>
+        <button className="button" type="submit">Send</button>
       </form>
     </div>
   );
