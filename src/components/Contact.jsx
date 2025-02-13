@@ -39,28 +39,56 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input
-            className="f-input"
-            type="text"
-            name="firstName"
-            placeholder="First name"
-            value={formData.firstName}
-            onChange={handleChange}
-          />
-          {errors.firstName && <span className="error">{errors.firstName}</span>}
-          <input
-            className="f-input"
-            type="text"
-            name="lastName"
-            placeholder="Last name"
-            value={formData.lastName}
-            onChange={handleChange}
-          />
-          {errors.lastName && <span className="error">{errors.lastName}</span>}
+    <>
+      <div className="flexbox">
+        <div className="contact-container">
+          <h2>Contact</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                className="f-input"
+                type="text"
+                name="firstName"
+                placeholder="First name"
+                value={formData.firstName}
+                onChange={handleChange}
+              />
+              {errors.firstName && <span className="error">{errors.firstName}</span>}
+              <input
+                className="f-input"
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                value={formData.lastName}
+                onChange={handleChange}
+              />
+              {errors.lastName && <span className="error">{errors.lastName}</span>}
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <span className="error">{errors.phone}</span>}
+            <textarea
+              name="message"
+              placeholder="Enter your message here..."
+              value={formData.message}
+              onChange={handleChange}
+            />
+            {errors.message && <span className="error">{errors.message}</span>}
+            <button class="button" type="submit">Send</button>
+          </form>
         </div>
         <input
           type="email"
@@ -88,6 +116,8 @@ const Contact = () => {
         <button className="button" type="submit">Send</button>
       </form>
     </div>
+      </div>
+    </>
   );
 };
 
