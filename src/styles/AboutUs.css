@@ -1,0 +1,67 @@
+
+.about-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .our-story, .mission-values, .our-team, .working-with-us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .our-story img, 
+  .our-team img, 
+  .working-with-us img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .mission-values {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-left: 5px solid #f4a261;
+  }
+  
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .working-with-us {
+    background-color: #ddd;
+    padding: 25px;
+    text-align: left;
+    border-left: 5px solid #555;
+  }
+  
+  
+  
