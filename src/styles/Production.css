@@ -28,11 +28,12 @@
   }
   
   .step-by-step img {
-    width: 100%;
+    width: auto;
     max-height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    
   }
   
   .step-by-step ul {
