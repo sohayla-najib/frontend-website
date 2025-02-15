@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../styles/contact.css";
 
 
@@ -72,6 +72,7 @@ const Contact = () => {
               onChange={handleChange}
             />
             {errors.email && <span className="error">{errors.email}</span>}
+            
             <input
               type="text"
               name="phone"
@@ -90,7 +91,33 @@ const Contact = () => {
             <button class="button" type="submit">Send</button>
           </form>
         </div>
-      </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        {errors.email && <span className="error">{errors.email}</span>}
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone Number"
+          value={formData.phone}
+          onChange={handleChange}
+        />
+        {errors.phone && <span className="error">{errors.phone}</span>}
+        <textarea
+          name="message"
+          placeholder="Enter your message here..."
+          value={formData.message}
+          onChange={handleChange}
+        />
+        {errors.message && <span className="error">{errors.message}</span>}
+        <button className="button" type="submit">Send</button>
+   
+  </div>
+     </div> 
     </>
   );
 };
