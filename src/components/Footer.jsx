@@ -24,7 +24,7 @@ function Footer() {
         <div className="logo">
          <h3>LOGO</h3>
          <p>
-            <img src="./assets/icons/phone.jpg"  className="icon" /> 01999111
+            <img src="assets/icons/phone.jpg"  className="icon" /> 01999111
          </p>
 
          <p>
