@@ -11,7 +11,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  
+
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    
+
       <div className="flexbox">
         <div className="contact-container">
           <h2>Contact</h2>
@@ -91,7 +91,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    
+
   );
 };
 
