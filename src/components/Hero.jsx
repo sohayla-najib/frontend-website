@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Hero() {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/services");
+    navigate("/projects");
   };
   return (
     <header className="hero">
@@ -18,7 +18,7 @@ function Hero() {
         </p>
 
         <button className="start-btn" onClick={handleClick}   >
-        Start Project
+        About-us
         </button>
      { /* stats moved insde herotext */}
        <div className="stats">
@@ -32,8 +32,6 @@ function Hero() {
          </div>
        </div>
   </div>
-      
-
       <div className="hero-images">
         <img src={interior1} alt="Interior 1" />
         <img src={interior2} alt="Interior 2" />

@@ -1,5 +1,3 @@
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,4 +19,5 @@
   color:#545454;
   text-decoration: none;
 }
+
 
