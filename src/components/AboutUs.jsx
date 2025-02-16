@@ -7,7 +7,7 @@ import interior4 from "../assets/images/interior4.jpg";
 const AboutUs = () => {
   return (
     <div className="about-container">
-      <h1>About Us</h1>
+      
       {/* Header */}
       <header className="header">
         <h2>Transforming Spaces, Inspiring Lives</h2>
