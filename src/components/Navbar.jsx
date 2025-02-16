@@ -22,9 +22,9 @@ function Navbar() {
         <li><Link to="/projects">Projects</Link></li>
 
         {/* <li><Link to="/contact">Contact</Link></li> */}
-        <li><Link to="/about">About </Link></li>
+        {/* <li><Link to="/about">About </Link></li> */}
 
-        <li><Link to="/contact">Contact</Link></li>
+        
         <li><Link to="/aboutus">About </Link></li>
        <li><Link to="/production">Production</Link></li> 
       </ul> 

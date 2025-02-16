@@ -32,8 +32,6 @@ function Hero() {
          </div>
        </div>
   </div>
-      
-
       <div className="hero-images">
         <img src={interior1} alt="Interior 1" />
         <img src={interior2} alt="Interior 2" />
