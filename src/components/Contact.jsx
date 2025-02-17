@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import React, { useState } from "react";
 import "../styles/contact.css";
 
 
@@ -11,7 +11,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  
+
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+
       <div className="flexbox">
         <div className="contact-container">
           <h2>Contact</h2>
@@ -90,6 +90,7 @@ const Contact = () => {
             <button className="button" type="submit">Send</button>
           </form>
         </div>
+<<<<<<< HEAD
         <input
           type="email"
           name="email"
@@ -118,6 +119,10 @@ const Contact = () => {
       </div>
       
     </>
+=======
+      </div>
+
+>>>>>>> d2aed27315ae0da66a71d0fbd8c8adf0a7108c7d
   );
 };
 

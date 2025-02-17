@@ -2,12 +2,16 @@
     display: flex;
     justify-content: space-around;
     background-color: #7f7f7f;
-    color: white;
+    color: #ffffff;
     padding: 30px;
-  
- 
   }
- .links a{
+  .contact h3,
+  .contact p {
+  color:white;
+  
+}  
+
+.links a{
   color: white;
  }
 
@@ -49,3 +53,4 @@
   width:30px;
   height:auto;
 }
+
