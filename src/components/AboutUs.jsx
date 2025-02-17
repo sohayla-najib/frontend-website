@@ -42,7 +42,7 @@ const AboutUs = () => {
       {/* Working With Us Section */}
       <section className="working-with-us">
         <div className="rectangle">
-          <p>Working with <strong>VIVA DECOR</strong> was a seamless experience. They truly understood our vision!</p>
+          <p>Working with us was a seamless experience. They truly understood our vision!</p>
         </div>
         <img src={interior4} alt="Working with Us" />
       </section>

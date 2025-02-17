@@ -7,44 +7,11 @@
   padding: 20px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: white;
-}
-
-.start-btn {
-  background-color: #FBB03B;
-  color: white;
-  border-color: #FBB03B;
-}
-
-.nav-links {
-  justify-content: space-between;
-  display: flex;
-}
-
-.nav-links li a {
-  margin: 0 30px;
-  color: #545454;
-  text-decoration: none;
-}
-
-
-/* Header */
+/* Header Section */
 .header {
-  text-align:center;
-  margin: 20px 0;
-}
-
-/* Stack H2 and H1 vertically */
-.header h2,
-.header h1 {
-  display: block;   /* Ensures each heading is on its own line */
-  margin: 0;        /* Reset default margins to control spacing manually */
-  padding: 0;
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
 }
 
 /* H2 Styles */
@@ -60,23 +27,23 @@
   font-size: 20px;
   font-weight: bold;
   color: #222; 
-  position:absolute;
-  bottom: 550px; 
+  margin-left:20px;
+  margin-bottom: 10px; 
     /* Dark text color for contrast */
 }
 
-
-
-
-/* Sections */
-.our-story {
+/* Sections Common Styles */
+.our-story,
+.mission-values,
+.our-team,
+.working-with-us {
   margin: 50px 0;
   text-align: center;
   padding: 20px;
 }
 .our-story , .p {
   font-size: 20px;
-  position: absolute;
+  position: relative;
 
 }
 .mission-values {
@@ -86,7 +53,7 @@
 }
 .mission-values , .h2 {
   font-size: 20px;
-  position: absolute;
+  position: relative;
 }
 .our-team{
 margin: 350px 0;
@@ -96,27 +63,24 @@ padding: 20px;
 .working-with-us
 
 /* Text Styles */
-h2 {
-  font-size: 22px;
-  color: #222;
-  font-weight: bold;
-}
+
 
 p {
   font-size: 16px;
   line-height: 1.5;
+  color: white;
 }
 
 /* Individual Image Styles */
 .our-story img {
     /* Position */
     position: absolute;   /* or relative, depending on your layout needs */
-    left: 900px;
-    top: -170px;
+    top: 10%;
+    margin-left:50% ;
   
     /* Dimensions */
-    width: 300px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
   
     /* Appearance */
     opacity: 1;           /* 100% in Figma */
@@ -125,11 +89,10 @@ p {
     /* Fill (Image) */
     background-image: url("interior1.jpg");  /* Replace with your actual image path */
     background-size: cover;    /* Ensures the image covers the entire area */
-    background-position: center;
-    background-repeat: no-repeat;
     
-    /* Transform (0° means no rotation) */
-    transform: rotate(0deg);
+    
+    
+    
   
   
 }
@@ -137,109 +100,97 @@ p {
 .our-team img {
   width: 280px;
   height: auto;
-  display: block;
-  margin: 20px auto;
-  position: absolute;
-  top: 583px;
-  right:975px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text Content */
+.section-content {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Rectangle Boxes */
+.rectangle {
+  background-color: #7f7f7f;
+  color: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Our Team Section */
+.our-team {
+  display: flex;
+  flex-direction: column;
+  
+  color: white;
+}
+.our-team p {
+  
+  color: white;
+}
+
+/* Working With Us Section */
+.working-with-us {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
   }
 
-.working-with-us img {
-  width: 300px;
-  height: 148px;
-  display: block;
-  margin: 20px auto;
-  position: absolute;
-  top: 783px;
-  right: 5px;
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .our-story,
+  .our-team,
+  .working-with-us {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .section-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .rectangle {
+    margin: 0;
+    padding: 30px;
+  }
+
+  .our-team .rectangle,
+  .working-with-us .rectangle {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
 }
 
-/* Background Rectangles */
-.rectangle {
-  background-color: #777;
-  color: white;
-  padding: 20px;
-  margin: 20px auto;
-  width: 60%;
-  
-  text-align: center;
-}
+@media (min-width: 1024px) {
+  .header h1 {
+    font-size: 2rem;
+  }
 
-.our-team .rectangle {
-  width: 60%;
-  padding: 20px;
-  
-  background-color: #7f7f7f;
-  position: relative;
-  bottom: -20px;
-  left: 30px;
-}
+  .header h2 {
+    font-size: 1.75rem;
+  }
 
-.working-with-us .rectangle {
-  width: 60%;
-  height: 105px;
-  padding: 20px;
-  background-color: #7f7f7f;
-  position: relative;
-  bottom: 318px;
-  left: 10px;
- 
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #7f7f7f;
-  color: white;
-  padding: 30px;
-
-
-
-
-}
-
-.links a {
-  color: white;
-}
-
-.links ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.links li a {
-  text-decoration: none;
-}
-
-.links li {
-  margin-top: 10px;
-}
-
-.logo {
-  text-align: center;
-}
-
-.logo h3 {
-  font-size: 24px;
-}
-
-.logo p {
-  margin: 10px 0;
-}
-
-.social-icon {
-  margin-right: 15px;
-}
-
-.social-icon img, .icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.icon {
-  width: 30px;
-  height: auto;
-}
+  .image-container img {
+    height: 400px;
+  }
+ }

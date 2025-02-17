@@ -1,102 +1,143 @@
+/* Production.css - Responsive Version */
 .Production-container {
-    padding: 50px;
-    text-align: center;
-    background-color: #f8f8f8;
-  }
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.highlight {
+  color: #f4a261;
+}
+
+/* Step-by-Step Section */
+.step-by-step {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.step-by-step ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-by-step li {
+  font-size: 1rem;
+  margin: 15px 0;
+  text-align: left;
+}
+
+/* Image Sections */
+.material,
+.technology,
+.Sustainable-Design {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .highlight {
-    color: #f4a261;
-  }
-  
-  .step-by-step {
-    background-color: #fff;
-    padding: 20px;
-    
-    
-    margin-bottom: 30px;
-  }
-  
-  .step-by-step h3 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .step-by-step img {
-    width: 250px;
-  height: 150px;
-  display: block;
-  margin: 20px auto;
-  
-  position: absolute;
-  top: 250px;
-  left: 50px;
-    
-  }
-  
-  .step-by-step ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .step-by-step li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-  }
-  
- .rectangle {
-  background-color:#777 ;
+}
+.material p {
+  font-size: 1rem;
   color: white;
   padding: 20px;
-  margin: 20px auto;
-  width: 60%;
- }
+}
+
+.technology p {
+  font-size: 1rem;
+  color: white;
+  padding:20px;
+}
+.Sustainable-Design p {
+  font-size: 1rem;
+  color: white;
+  padding: 20px;
+}
+
+.material img,
+.technology img,
+.Sustainable-Design img {
+  width: 50%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Rectangle Styles */
+.rectangle {
+  background-color: #777;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
   
-  .material img {
-    width: 200px;
-    height: 100px;
-    position:absolute;
-    display: block;
-    margin: 20px auto; 
-    left: 70px;
-    top: 500px;
-    
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
   }
-  
-  .technology img {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    display: block;
-    margin: 20px auto;
-    right: 70px;
-    top: 655px;
-  }
-  .Sustainable-Design img {
-    width: 200px;
-    height:100 ;
-    position: absolute;
-    display: block;
-    margin: 20px auto;
-    left: 70px;
-    top:810px;
-  }
-  
-  
-  .material, .technology, .Sustainable-Design {
+
+  .step-by-step {
     display: flex;
-    justify-content: center;
+    gap: 40px;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
   }
-  
- 
-  
-  
+
+  .step-by-step ul {
+    flex: 1;
+  }
+
+  .step-by-step img {
+    flex: 1;
+    height: 300px;
+    position: static;
+  }
+
+  .material,
+  .technology,
+  .Sustainable-Design {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .material img,
+  .technology img,
+  .Sustainable-Design img {
+    flex: 1;
+    height: 350px;
+    position: static;
+  }
+
+  .rectangle {
+    flex: 1;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .step-by-step li {
+    font-size: 1.1rem;
+  }
+
+  .material img,
+  .technology img,
+  .Sustainable-Design img {
+    height: 400px;
+  }
+}
